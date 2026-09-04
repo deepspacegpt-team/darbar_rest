@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darbar Restaurant — Where Tradition Meets Taste</title>
+  <meta name="description" content="Authentic Indian cuisine with royal hospitality. Managed by MR X. Rated 4.3/5 by 500+ happy customers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600&family=Great+Vibes&family=Montserrat:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============== NAVBAR ============== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <i class="fa-solid fa-crown"></i>
+        <span>Darbar</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Book Table</a>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content" data-aos="fade-up">
+      <p class="pre-title">✨ Welcome to ✨</p>
+      <h1 class="hero-title">Darbar Restaurant</h1>
+      <p class="hero-tagline">Where Tradition Meets Taste</p>
+      <p class="hero-sub">Authentic flavors crafted with love by <strong>MR X</strong></p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Reserve a Table</a>
+        <a href="#menu" class="btn btn-outline">Explore Menu</a>
+      </div>
+      <div class="rating-card">
+        <div class="rating-stars">★★★★★</div>
+        <p><strong>4.3/5</strong> — 500+ Happy Customers</p>
+      </div>
+    </div>
+    <div class="hero-arch"></div>
+  </section>
+
+  <!-- ============== ABOUT ============== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images" data-aos="fade-right">
+          <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?w=600" alt="Restaurant" class="img-1" />
+          <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400" alt="Food" class="img-2" />
+        </div>
+        <div class="about-text" data-aos="fade-left">
+          <p class="eyebrow">Our Story</p>
+          <h2 class="section-title">A Legacy of Royal Flavors</h2>
+          <p>For over 15 years, <strong>Darbar Restaurant</strong> has been serving authentic Indian cuisine that brings families together. Our recipes are passed down through generations, preserving the true essence of traditional cooking.</p>
+          <p>Under the dedicated management of <strong>MR X</strong>, we continue to deliver exceptional dining experiences with warm hospitality and unforgettable taste.</p>
+          <div class="quote-box">
+            <i class="fa-solid fa-quote-left"></i>
+            <p>"Every guest deserves a royal experience with authentic flavors."</p>
+            <span>— MR X</span>
+          </div>
+          <div class="stats">
+            <div class="stat"><strong>15+</strong><span>Years</span></div>
+            <div class="stat"><strong>50+</strong><span>Dishes</span></div>
+            <div class="stat"><strong>10K+</strong><span>Guests</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== WHY CHOOSE US ============== -->
+  <section class="why-us">
+    <div class="container">
+      <p class="eyebrow" data-aos="fade-up">Why Us</p>
+      <h2 class="section-title" data-aos="fade-up">Why Choose Darbar</h2>
+      <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon"><i class="fa-solid fa-utensils"></i></div>
+          <h3>Authentic Taste</h3>
+          <p>Traditional recipes passed down generations</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon"><i class="fa-solid fa-hat-chef"></i></div>
+          <h3>Expert Chefs</h3>
+          <p>Skilled cooks with 15+ years experience</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+          <h3>Fresh Ingredients</h3>
+          <p>Locally sourced, daily preparation</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-icon"><i class="fa-solid fa-handshake"></i></div>
+          <h3>Humble Staff</h3>
+          <p>Service with warmth and respect</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="feature-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+          <h3>Affordable Pricing</h3>
+          <p>Royal experience at ₹200–400</p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="feature-icon"><i class="fa-solid fa-people-roof"></i></div>
+          <h3>Family Ambiance</h3>
+          <p>Cozy, welcoming for all ages</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== MENU ============== -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <p class="eyebrow" data-aos="fade-up">Specialties</p>
+      <h2 class="section-title" data-aos="fade-up">Our Menu</h2>
+      
+      <div class="menu-tabs" data-aos="fade-up">
+        <button class="tab active" data-tab="lunch">Lunch</button>
+        <button class="tab" data-tab="dinner">Dinner</button>
+        <button class="tab" data-tab="breakfast">Breakfast</button>
+        <button class="tab" data-tab="snacks">Snacks</button>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-card" data-aos="zoom-in" data-cat="lunch">
+          <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400')"></div>
+          <span class="veg-badge">🟢 Veg</span>
+          <h3>Royal Thali</h3>
+          <p>Complete meal with 5 sabzis, dal, rice, roti</p>
+          <div class="menu-footer"><span class="price">₹250</span><button>Order</button></div>
+        </div>
+        <div class="menu-card" data-aos="zoom-in" data-aos-delay="100" data-cat="lunch dinner">
+          <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400')"></div>
+          <span class="veg-badge">🟢 Veg</span>
+          <h3>Paneer Butter Masala</h3>
+          <p>Cottage cheese in rich tomato gravy</p>
+          <div class="menu-footer"><span class="price">₹220</span><button>Order</button></div>
+        </div>
+        <div class="menu-card" data-aos="zoom-in" data-aos-delay="200" data-cat="lunch">
+          <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400')"></div>
+          <span class="veg-badge">🟢 Veg</span>
+          <h3>Dal Makhani</h3>
+          <p>Slow-cooked black lentils in cream</p>
+          <div class="menu-footer"><span class="price">₹180</span><button>Order</button></div>
+        </div>
+        <div class="menu-card" data-aos="zoom-in" data-aos-delay="300" data-cat="dinner">
+          <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=400')"></div>
+          <span class="veg-badge">🔴 Non-Veg</span>
+          <h3>Hyderabadi Biryani</h3>
+          <p>Aromatic rice with tender meat & spices</p>
+          <div class="menu-footer"><span class="price">₹320</span><button>Order</button></div>
+        </div>
+        <div class="menu-card" data-aos="zoom-in" data-aos-delay="400" data-cat="breakfast">
+          <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1630383249896-424e482df921?w=400')"></div>
+          <span class="veg-badge">🟢 Veg</span>
+          <h3>Masala Dosa</h3>
+          <p>Crispy crepe with potato filling</p>
+          <div class="menu-footer"><span class="price">₹120</span><button>Order</button></div>
+        </div>
+        <div class="menu-card" data-aos="zoom-in" data-aos-delay="500" data-cat="snacks">
+          <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400')"></div>
+          <span class="veg-badge">🟢 Veg</span>
+          <h3>Samosa Platter</h3>
+          <p>3 crispy samosas with mint chutney</p>
+          <div class="menu-footer"><span class="price">₹80</span><button>Order</button></div>
+        </div>
+        <div class="menu-card" data-aos="zoom-in" data-aos-delay="600" data-cat="snacks">
+          <div class="menu-img" style="background-image: url('gulabjamun.webp');"></div>
+
+          <span class="veg-badge">🟢 Veg</span>
+          <h3>Gulab Jamun</h3>
+          <p>Soft milk dumplings in sugar syrup</p>
+          <div class="menu-footer"><span class="price">₹90</span><button>Order</button></div>
+        </div>
+        <div class="menu-card" data-aos="zoom-in" data-aos-delay="700" data-cat="breakfast">
+          <div class="menu-img" style="background-image:url('https://images.unsplash.com/photo-1559054663-e8d23213f55c?w=400')"></div>
+          <span class="veg-badge">🟢 Veg</span>
+          <h3>Filter Coffee</h3>
+          <p>Traditional South Indian coffee</p>
+          <div class="menu-footer"><span class="price">₹50</span><button>Order</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== REVIEWS ============== -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <p class="eyebrow" data-aos="fade-up">Testimonials</p>
+      <h2 class="section-title" data-aos="fade-up">What Our Guests Say</h2>
+      
+      <div class="review-stats" data-aos="fade-up">
+        <div class="r-stat"><strong>4.3</strong><span>Overall</span></div>
+        <div class="r-stat"><strong>4.3</strong><span>Food</span></div>
+        <div class="r-stat"><strong>4.3</strong><span>Service</span></div>
+        <div class="r-stat"><strong>30+</strong><span>Reviews</span></div>
+      </div>
+
+      <div class="swiper review-slider" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide review-card">
+            <i class="fa-solid fa-quote-left quote"></i>
+            <p>"Very good food and Darbar service are very good 👍"</p>
+            <div class="stars">★★★★★</div>
+            <div class="reviewer">
+              <div class="avatar">R</div>
+              <div><strong>Guest One</strong><span>5 months ago</span></div>
+            </div>
+          </div>
+          <div class="swiper-slide review-card">
+            <i class="fa-solid fa-quote-left quote"></i>
+            <p>"Good facility and humble staff. Highly recommended!"</p>
+            <div class="stars">★★★★★</div>
+            <div class="reviewer">
+              <div class="avatar">P</div>
+              <div><strong>Guest Two</strong><span>1 month ago</span></div>
+            </div>
+          </div>
+          <div class="swiper-slide review-card">
+            <i class="fa-solid fa-quote-left quote"></i>
+            <p>"Best place and nice taste. MR X — good supportive manager!"</p>
+            <div class="stars">★★★★★</div>
+            <div class="reviewer">
+              <div class="avatar">R</div>
+              <div><strong>Guest Three</strong><span>Local Guide</span></div>
+            </div>
+          </div>
+          <div class="swiper-slide review-card">
+            <i class="fa-solid fa-quote-left quote"></i>
+            <p>"Good food and good service. Enjoyed a lot 😃"</p>
+            <div class="stars">★★★★★</div>
+            <div class="reviewer">
+              <div class="avatar">L</div>
+              <div><strong>Guest Four</strong><span>11 months ago</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== MANAGER ============== -->
+  <section class="manager">
+    <div class="container">
+      <div class="manager-card" data-aos="zoom-in">
+        <div class="manager-photo">
+          <i class="fa-solid fa-user-tie"></i>
+        </div>
+        <p class="eyebrow">Meet Our Manager</p>
+        <h2>MR X</h2>
+        <span class="title">Restaurant Manager</span>
+        <p class="quote-text">"We believe every guest deserves a royal experience. Our team works with passion to serve authentic flavors with warmth and care."</p>
+        <div class="badges">
+          <span class="badge">⭐ Mentioned in 10+ Reviews</span>
+          <span class="badge">🏆 15+ Years Experience</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== GALLERY ============== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <p class="eyebrow" data-aos="fade-up">Gallery</p>
+      <h2 class="section-title" data-aos="fade-up">A Glimpse of Darbar</h2>
+    <div class="gallery-grid">
+  <!-- Tall Image: Great for a full plate of food -->
+  <div class="g-item tall" data-aos="zoom-in" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600')"></div>
+  
+  <!-- Standard Image: Great for a side dish -->
+  <div class="g-item" data-aos="zoom-in" data-aos-delay="100" style="background-image:url('https://images.unsplash.com/photo-1567337710282-00832b415979?w=600')"></div>
+  
+  <!-- Standard Image: Great for a dessert -->
+  <div class="g-item" data-aos="zoom-in" data-aos-delay="200" style="background-image:url('https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600')"></div>
+  
+  <!-- Wide Image: Great for a table spread or restaurant interior -->
+  <div class="g-item wide" data-aos="zoom-in" data-aos-delay="300" style="background-image:url('https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600')"></div>
+  
+  <!-- Standard Image -->
+ <div class="g-item tall" data-aos="zoom-in" style="background-image:url('sample.jpg')"></div>
+  
+
+  </section>
+
+  <!-- ============== CONTACT / RESERVATION ============== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <p class="eyebrow" data-aos="fade-up">Get in Touch</p>
+      <h2 class="section-title" data-aos="fade-up">Reserve Your Table</h2>
+      <div class="contact-grid">
+        <form class="contact-form" data-aos="fade-right" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" required id="name" />
+              <label>Full Name</label>
+            </div>
+            <div class="form-group">
+              <input type="tel" required id="phone" />
+              <label>Phone</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="email" required id="email" />
+            <label>Email</label>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="date" required id="date" />
+              <label class="static">Date</label>
+            </div>
+            <div class="form-group">
+              <input type="time" required id="time" />
+              <label class="static">Time</label>
+            </div>
+            <div class="form-group">
+              <input type="number" min="1" max="20" required id="guests" placeholder=" " />
+              <label>Guests</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea rows="3" id="message" placeholder=" "></textarea>
+            <label>Special Requests</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Confirm Reservation</button>
+        </form>
+
+        <div class="contact-info" data-aos="fade-left">
+          <h3>Visit Us</h3>
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Address</strong>
+              <p>NOT AVAILABLE WITH SAMPLE WEBSITE</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>Phone</strong>
+              <p>XXXXXXXXXX</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <strong style="color: var(--maroon); font-size: 0.8rem; display: block; margin-bottom: 5px;">IF YOU WANT A WEBSITE LIKE THIS EMAIL US:</strong>
+              <p><a href="mailto:deepspacegpt.team@gmail.com">deepspacegpt.team@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <strong>Hours</strong>
+              <p>Mon – Sun: 11:00 AM – 11:00 PM</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-indian-rupee-sign"></i>
+            <div>
+              <strong>Price</strong>
+              <p>₹200 – ₹400 per person</p>
+            </div>
+          </div>
+          <a href="https://wa.me/XXXXXXXXXX" class="whatsapp-btn">
+            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#home" class="logo"><i class="fa-solid fa-crown"></i> Darbar</a>
+          <p>Authentic Indian cuisine served with royal hospitality. A legacy of taste and tradition.</p>
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Reservations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>📍 NOT AVAILABLE WITH SAMPLE WEBSITE</p>
+          <p>📞 XXXXXXXXXX</p>
+          <p>📧 deepspacegpt.team@gmail.com</p>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <p>Monday – Sunday</p>
+          <p>11:00 AM – 11:00 PM</p>
+          <p class="manager-credit">Manager: <strong>MR X</strong></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Darbar Restaurant. All Rights Reserved. | Crafted with ❤️</p>
+        <div class="payments">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-google-pay"></i>
+          <i class="fa-brands fa-cc-amazon-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============== FLOATING WHATSAPP ============== -->
+  <a href="https://wa.me/XXXXXXXXXX" class="float-whatsapp" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <a href="#home" class="scroll-top" id="scrollTop"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

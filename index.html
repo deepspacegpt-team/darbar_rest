@@ -12,6 +12,19 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* SAFETY RULE: Prevents text from disappearing if AOS fails to load */
+    [data-aos] {
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: none !important;
+    }
+    /* This ensures the site is visible while the JS loads */
+    .hero-content, .about-text, .section-title, .feature-card, .menu-card, .review-card, .manager-card, .g-item, .contact-form, .contact-info {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+  </style>
 </head>
 <body>
 
@@ -183,7 +196,6 @@
         </div>
         <div class="menu-card" data-aos="zoom-in" data-aos-delay="600" data-cat="snacks">
           <div class="menu-img" style="background-image: url('gulabjamun.webp');"></div>
-
           <span class="veg-badge">🟢 Veg</span>
           <h3>Gulab Jamun</h3>
           <p>Soft milk dumplings in sugar syrup</p>
@@ -283,24 +295,15 @@
     <div class="container">
       <p class="eyebrow" data-aos="fade-up">Gallery</p>
       <h2 class="section-title" data-aos="fade-up">A Glimpse of Darbar</h2>
-    <div class="gallery-grid">
-  <!-- Tall Image: Great for a full plate of food -->
-  <div class="g-item tall" data-aos="zoom-in" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600')"></div>
-  
-  <!-- Standard Image: Great for a side dish -->
-  <div class="g-item" data-aos="zoom-in" data-aos-delay="100" style="background-image:url('https://images.unsplash.com/photo-1567337710282-00832b415979?w=600')"></div>
-  
-  <!-- Standard Image: Great for a dessert -->
-  <div class="g-item" data-aos="zoom-in" data-aos-delay="200" style="background-image:url('https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600')"></div>
-  
-  <!-- Wide Image: Great for a table spread or restaurant interior -->
-  <div class="g-item wide" data-aos="zoom-in" data-aos-delay="300" style="background-image:url('https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600')"></div>
-  
-  <!-- Standard Image -->
- <div class="g-item tall" data-aos="zoom-in" style="background-image:url('sample.jpg')"></div>
-  
-
-  </section>
+      <div class="gallery-grid">
+        <div class="g-item tall" data-aos="zoom-in" style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600')"></div>
+        <div class="g-item" data-aos="zoom-in" data-aos-delay="100" style="background-image:url('https://images.unsplash.com/photo-1567337710282-00832b415979?w=600')"></div>
+        <div class="g-item" data-aos="zoom-in" data-aos-delay="200" style="background-image:url('https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600')"></div>
+        <div class="g-item wide" data-aos="zoom-in" data-aos-delay="300" style="background-image:url('https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600')"></div>
+        <div class="g-item tall" data-aos="zoom-in" style="background-image:url('sample.jpg')"></div>
+      </div> <!-- FIXED: Closed gallery-grid -->
+    </div>
+  </section> <!-- FIXED: Closed gallery section -->
 
   <!-- ============== CONTACT / RESERVATION ============== -->
   <section class="contact" id="contact">

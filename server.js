@@ -6,26 +6,18 @@ require('dotenv').config();
 const app = express();
 
 // Middleware
-app.use(cors()); // Allows your HTML file to talk to this server
-app.use(express.json()); // Allows server to read JSON data
-
-const path = require('path'); // Make sure this is at the very top of server.js
-
-// Replace your old express.static line with this:
-app.use(express.static(path.join(__dirname, '.')));
-
+app.use(cors());
+app.use(express.json());
 
 // 1. DATABASE CONNECTION
-// Replace the URL below with your MongoDB Atlas connection string
-// Replace the string below with your ACTUAL username and password
-const mongoURI = 'mongodb+srv://admin:admin123@darbarcluster.djfenya.mongodb.net/darbar_db?retryWrites=true&w=majority';
-
+// Vercel will pull this from your Environment Variables
+const mongoURI = process.env.MONGO_URI;
 
 mongoose.connect(mongoURI)
   .then(() => console.log('✅ Connected to MongoDB'))
   .catch(err => console.error('❌ MongoDB Connection Error:', err));
 
-// 2. DATA MODEL (What a reservation looks like)
+// 2. DATA MODEL
 const reservationSchema = new mongoose.Schema({
   name: { type: String, required: true },
   phone: { type: String, required: true },
@@ -52,7 +44,7 @@ app.post('/api/reservations', async (req, res) => {
   }
 });
 
-// Route to GET all reservations (For MR X / Manager)
+// Route to GET all reservations (For Manager)
 app.get('/api/reservations', async (req, res) => {
   try {
     const bookings = await Reservation.find().sort({ createdAt: -1 });
@@ -62,8 +54,5 @@ app.get('/api/reservations', async (req, res) => {
   }
 });
 
-// Start Server
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
-});
+// IMPORTANT FOR VERCEL: Export the app as a module
+module.exports = app;

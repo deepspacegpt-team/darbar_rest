@@ -9,14 +9,11 @@ const app = express();
 app.use(cors()); // Allows your HTML file to talk to this server
 app.use(express.json()); // Allows server to read JSON data
 
-const path = require('path'); // Add this at the very top of your file with other requires
+const path = require('path'); // Make sure this is at the very top of server.js
 
-// ... (middle of your code) ...
+// Replace your old express.static line with this:
+app.use(express.static(path.join(__dirname, '.')));
 
-// ADD THIS EXACT BLOCK:
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
 
 // 1. DATABASE CONNECTION
 // Replace the URL below with your MongoDB Atlas connection string
